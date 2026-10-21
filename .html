@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delia</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: grid;
+    place-items: center;
+    background: #fff1e2;
+    color: #c2410c;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #2a1208; color: #fb923c; }
+  }
+  main { text-align: center; }
+  .name { font-size: clamp(3rem, 14vw, 7rem); line-height: 1; margin: 0; }
+  .arrow { width: clamp(60px, 14vw, 110px); height: auto; display: block; margin: 8px auto; }
+  .face { font-size: clamp(7rem, 34vw, 16rem); line-height: 1; }
+</style>
+</head>
+<body>
+  <main>
+    <h1 class="name">Delia</h1>
+    <svg class="arrow" viewBox="0 0 60 80" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M30 6 V70 M10 50 L30 72 L50 50"/>
+    </svg>
+    <div class="face" role="img" aria-label="Ginger girl">👩‍🦰</div>
+  </main>
+</body>
+</html>
